@@ -45,7 +45,15 @@ sudo dpkg -i ./containerd.io_1.6.22-1_amd64.deb \
  ./docker-buildx-plugin_0.11.2-1~ubuntu.22.04~jammy_amd64.deb \
  ./docker-compose-plugin_2.20.2-1~ubuntu.22.04~jammy_amd64.deb
 
-sudo chmod 666 /var/run/docker.sock
+#run docker without root privileges
+sudo groupadd docker
+sudo usermod -aG docker $USER
+sudo chown "$USER":"$USER" /home/"$USER"/.docker -R
+sudo chmod g+rwx "$HOME/.docker" -R
+
+#start docker on boot
+sudo systemctl enable docker.service
+sudo systemctl enable containerd.service
 
 cd ~
 
