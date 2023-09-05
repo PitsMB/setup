@@ -4,10 +4,10 @@
 export HISTIGNORE='*sudo -S*'
 
 #install curl
-sudo sudo apt install curl -y
+sudo apt install curl -y
 
 #install git
-sudo sudo apt install git-all -y
+sudo apt install git-all -y
 
 #configure git
 git config --global user.email "mark.joseph.balagtas@outlook.com"
@@ -27,6 +27,10 @@ git config --global init.defaultBranch main
 
 #install google-chrome
 mkdir ~/Downloads/deb && cd ~/Downloads/deb
+
+#install zoom
+wget https://zoom.us/client/5.15.11.7239/zoom_amd64.deb
+sudo apt install ./zoom_amd64.deb -y
 
 #install google-chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
