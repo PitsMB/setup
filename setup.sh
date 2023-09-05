@@ -68,9 +68,19 @@ sudo apt-get update
 sudo apt-get install nodejs -y
 
 #install python3.11
-sudo apt update
-sudo add-apt-repository ppa:deadsnakes/ppa
-sudo apt update
-sudo apt install python3.11 -y
-sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.11 1
-sudo ln -s /usr/bin/python3.11 /usr/bin/python
+# sudo apt update
+# sudo add-apt-repository ppa:deadsnakes/ppa
+# sudo apt update
+# sudo apt install python3.11 -y
+# sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.11 1
+# sudo ln -s /usr/bin/python3.11 /usr/bin/python
+
+#install python packages
+sudo apt install python3-pip -y
+sudo apt install python3.10-venv
+
+#install postgres
+sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
+wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+sudo apt-get update
+sudo apt-get -y install postgresql libpq-dev postgresql-server-dev-12 postgresql-client-12
