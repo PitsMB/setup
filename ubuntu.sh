@@ -15,15 +15,15 @@ git config --global user.name "514sh"
 git config --global init.defaultBranch main
 
 #generate ssh-key for git
-ssh-keygen -t ed25519 -C "mark.joseph.balagtas@outlook.com"
-ssh-add ~/.ssh/id_ed25519
+#ssh-keygen -t ed25519 -C "mark.joseph.balagtas@outlook.com"
+#ssh-add ~/.ssh/id_ed25519
 
 #copy ssh key
-cat ~/.ssh/id_ed25519.pub
+#cat ~/.ssh/id_ed25519.pub
 #paste the string from cli to github
 
 #test ssh
-ssh -T git@github.com
+#ssh -T git@github.com
 
 #install google-chrome
 mkdir ~/Downloads/deb && cd ~/Downloads/deb
@@ -84,3 +84,18 @@ sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)
 wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
 sudo apt-get update
 sudo apt-get -y install postgresql libpq-dev postgresql-server-dev-12 postgresql-client-12
+
+#install spotify
+curl -sS https://download.spotify.com/debian/pubkey_7A3A762FAFD4A51F.gpg | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg
+echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
+sudo apt-get update && sudo apt-get install spotify-client -y
+
+#install vscode
+sudo apt-get install wget gpg
+wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
+sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
+sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
+rm -f packages.microsoft.gpg
+sudo apt install apt-transport-https -y
+sudo apt update
+sudo apt install code -y # or code-insiders
