@@ -1,0 +1,247 @@
+%-------------------------
+% Resume in Latex
+% Author : Mark Joseph Balagtas
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+% \newcommand{\resumeItem}[2]{
+%   \item\small{
+%     \textbf{#1}{: #2 \vspace{-2pt}}
+%   }
+% }
+
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+% \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\newcommand{\resumeSubItem}[1]{\item{\small#1\vspace{-4pt}}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Huge Mark Joseph Balagtas} & Email : \href{mailto:mark.joseph.balagtas@outlook.com}{mark.joseph.balagtas@outlook.com}\\
+    \textbf{\Large Software Developer} & Mobile : 
+    \href{tel:+639231407446}{+63 923-140-7446}\\ {Pampanga, Philippines} &
+  \href{https://github.com/514sh}{Github: github.com/514sh}
+\end{tabular*}
+
+
+%-----------PROFESSIONAL SUMMARY-----------------
+\section{Professional Summary}
+\resumeItemListStart
+\resumeItem
+{Highly motivated and resourceful software developer with over a year of experience in software development and maintenance.} 
+\resumeItem
+{A problem solver with a strong focus on delivering effective solutions.}
+\resumeItemListEnd
+
+%-----------PROFESSIONAL EXPERIENCE-----------------
+\section{Professional Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Accenture Inc.}{Taguig City, Philippines}
+{Associate Software Engineer}{April 2022 - August 2023}
+\resumeItemListStart
+\resumeItem
+{Played a pivotal role as a Level 2 Support Specialist in the maintenance and support of a critical middleware application used globally.}
+\resumeItem
+{Provided comprehensive support for the middleware application, which is developed using Oracle SOA and Java for its services.}
+\resumeItem
+{Resolved a wide range of issues related to the application, including change tickets, incident tickets, and request items tickets, raised by application users, developers, and testers.}
+\resumeItem
+{Collaborated closely with cross-functional teams to identify, troubleshoot, and resolve complex technical issues within defined service level agreements (SLAs).}
+\resumeItem
+{Deployed updates and enhancements to the software application, ensuring seamless functionality and performance improvements.}
+\resumeItem
+{Monitored and assessed CPU utilization and server states, promptly taking corrective actions when necessary to maintain optimal application performance.}
+\resumeItem
+{Contributed to the continuous improvement of support processes, helping streamline issue resolution and reduce downtime.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Traceserv}{Quezon City, Philippines}
+{Cadet Network Engineer}{April 2021 - September 2021}
+\resumeItemListStart
+\resumeItem
+{Performed basic commissioning, troubleshooting, system testing, and hardware testing of Huawei equipment, including ATN910C and ATN910C-G.}
+\resumeItem
+{Reported to the Globe Technology Network Operations Center for pre-validation and post-validation of voice and data.}
+\resumeItem
+{Conducted equipment upgrades from ATN910B to ATN910C router series.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Don Honorio Ventura State University}{Bacolor, Pampanga, Philippines}
+{Bachelor of Science in Electronics Engineering}{June 2015 - June 2020}
+\resumeSubHeadingListEnd
+
+%-----------ADDITIONAL EXPERIENCE-----------------
+\section{Additional Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Clients from UAE}{Remote}
+{Freelance Data Automation Specialist}{March 2023 - Present}
+\resumeItemListStart
+\resumeItem
+{Managed end-to-end data processing for clients, including data input from txt files and generating output files based on client specifications.}
+\resumeItem
+{Developed custom Python3 scripts using an object-oriented approach to automate data analysis tasks, improving efficiency and accuracy.}
+\resumeItem
+{Created executable (.exe) applications using PyInstaller to run the Python scripts independently on various systems.}
+\resumeItem
+{Integrated automated communication using WhatsApp to deliver output data to clients, enhancing real-time communication and client satisfaction.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Macrin.ph}{Makati City, Philippines}
+{Intern (IT)}{April 2019 - May 2019}
+\resumeItemListStart
+\resumeItem
+{Developed and debugged software applications in an agile environment.}
+\resumeItem
+{Participated in daily scrum meetings.}
+\resumeItemListEnd
+
+
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeSubheading
+{\href{http://www.flavorfulfinds.xyz/}{Flavorful Finds}}{Domain: flavorfulfinds.xyz}
+{A recipe finder web application}{}
+\resumeItemListStart
+\resumeItem
+{A web app that allows users to search for recipes by ingredients or recipe title.}
+\resumeItem
+{Features user account functionality for creating accounts, logging in, and storing favorite recipes.}
+\resumeSubItem
+{Technologies used}
+\resumeSubHeadingListStart
+\resumeItem{Frontend: React, Chakra UI} 
+\resumeItem{Backend: Flask} 
+\resumeItem{Database: PostgreSQL, Excel}
+\resumeItem{Containerization: Docker, Docker Compose} 
+\resumeItem{Web Servers: Nginx}
+\resumeItem{Cloud Services: AWS (EC2, Route 53, S3)} 
+\resumeItem{Version Control: Git, Github}
+\resumeSubHeadingListEnd
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------CERTIFICATES-----------------
+\section{Certificates}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{\href{https://studies.cs.helsinki.fi/stats/api/certificate/docker2023/en/53830ae5415b59882a9ecb3bc8052552}
+{Certificate Course in DevOps with Docker}}{University of Helsinki}
+{\href{https://devopswithdocker.com}{devopswithdocker.com}}{2023}
+\resumeSubheading
+{\href{https://studies.cs.helsinki.fi/stats/api/certificate/fs-cicd/en/ced81c9b6eb5147f507b806893b95c4d}
+{Certificate Course in CI/CD}}{University of Helsinki}
+{\href{https://fullstackopen.com/en/part11}{fullstackopen.com/part11}}{2023}
+\resumeSubheading
+{\href{https://certificates.mooc.fi/validate/ynptl4uyzlh}
+{Certificate Course in Java Programming I and Java Programming II}}{University of Helsinki}
+{\href{https://java-programming.mooc.fi/}{java-programming.mooc.fi/}}{2022}
+\resumeSubheading
+{\href{https://studies.cs.helsinki.fi/stats/api/certificate/fullstackopen/en/d143d632300e29c5c498bce5528df5d7}{Certificate Course in Fullstack Development}}{University of Helsinki}
+{\href{https://fullstackopen.com/en/}{fullstackopen.com}}{2021 - 2022}
+
+\resumeSubHeadingListEnd
+
+%-----------LANGUAGES-----------------
+\section{Languages}
+\resumeSubHeadingListStart
+\resumeItem{English - (Fluent)} 
+\resumeItem{Tagalog - (Native)}
+\resumeSubHeadingListEnd
+
+\end{document}
